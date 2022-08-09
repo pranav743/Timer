@@ -1,0 +1,116 @@
+#:kivy 2.1.0
+
+
+<Button>:
+    background_normal:''
+    background_color: (0,0,0,1)
+    font_size: 32
+
+<Alarm_by_PranavWidget>:
+
+    BoxLayout:
+        orientation:"vertical"
+        size: root.width, root.height
+        
+        
+        
+                
+
+        GridLayout:
+            cols: 7
+            rows: 5
+            Widget:
+            Widget:
+            Widget:
+            Widget:
+            Widget:
+            Widget:
+            Widget:
+            Button:
+                text:""
+            TextInput:
+                id: I_hr 
+                text: ""
+                multiline: False
+                halign: "right"
+                padding_y: 10
+                padding_x: 10
+                
+                font_size: 50
+
+            Button:
+                text:"-"
+
+
+            TextInput:
+                text: ""
+                id: I_min 
+                font_size: 50
+                multiline: False
+                halign: "right"
+                padding_y: 10
+                padding_x: 10
+
+            Button:
+                text:"-"
+
+            
+            TextInput:
+                text: ""
+                id: I_sec 
+                font_size:50
+                multiline: False
+                halign: "right"
+                padding_y: 10
+                padding_x: 10
+              
+
+            Button:
+                text:""
+
+            Widget:
+            Button:
+                
+                text:"HOURS"
+                font_size: 20
+                color:(1,1,1)
+            Widget:
+            Button:
+                
+                text:"MINUTES"
+                font_size: 20
+                color:(1,1,1)
+            Widget:
+            Button:
+                
+                text:"SECONDS"
+                font_size: 20
+                color:(1,1,1)
+            Widget:
+
+            
+
+        GridLayout:
+            cols: 3
+            rows: 3
+
+            Widget:
+            Button:
+                text: ""
+                id: status
+                font_size: 50
+                color: (1,1,1)
+            Widget:
+            Widget:
+            Button:
+                id:initiation
+                text:"START"
+                background_color: (18/255, 6/255, 97/255, 0.5)
+                on_press: root.start_alarm()
+            Widget:
+            Widget:
+            Button:
+                text: ""
+                id: time_display
+            Widget:
+
